@@ -68,6 +68,11 @@ class Apples:
     def _missing_(cls, value):
         pass
 
+    # Allow `_`
+    @classmethod
+    def _(cls):
+        pass
+
 
 def __foo_bar__():  # this is not checked by the [bad-dunder-name] rule
     ...
